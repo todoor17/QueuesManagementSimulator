@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.HelloController">
+   <children>
+      <Button fx:id="btn" layoutX="365.0" layoutY="330.0" mnemonicParsing="false" onAction="#setText" prefHeight="26.0" prefWidth="60.0" text="Run" />
+      <TextArea fx:id="textArea" layoutX="30.0" layoutY="385.0" prefHeight="224.0" prefWidth="597.0" />
+      <TextField fx:id="nrOfServers" alignment="CENTER" layoutX="314.0" layoutY="47.0" prefHeight="26.0" prefWidth="193.0" promptText="Number of servers" />
+      <TextField fx:id="nrOfClients" alignment="CENTER" layoutX="313.0" layoutY="83.0" prefHeight="26.0" prefWidth="194.0" promptText="Number of clients" />
+      <TextField fx:id="minProcessingTime" alignment="CENTER" layoutX="313.0" layoutY="193.0" prefHeight="26.0" prefWidth="194.0" promptText="Minimum processing time" />
+      <TextField fx:id="maxProcessingTime" alignment="CENTER" layoutX="313.0" layoutY="230.0" prefHeight="26.0" prefWidth="194.0" promptText="Maximum processing time" />
+      <TextField fx:id="timeLimit" alignment="CENTER" layoutX="313.0" layoutY="268.0" prefHeight="26.0" prefWidth="194.0" promptText="Time limit" />
+      <TextField fx:id="minArrivalTime" alignment="CENTER" layoutX="313.0" layoutY="120.0" prefHeight="26.0" prefWidth="194.0" promptText="Minimum arrival time" />
+      <TextField fx:id="maxArrivalTime" alignment="CENTER" layoutX="313.0" layoutY="156.0" prefHeight="26.0" prefWidth="194.0" promptText="Maximum arrival time" />
+      <Text layoutX="164.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of servers:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="164.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of clients:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="155.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum arrival time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="156.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum arrival time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="145.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum processing time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="145.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum processing time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="191.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time limit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="rbShortestTime" layoutX="231.0" layoutY="317.0" mnemonicParsing="false" text="Shortest Time">
+         <toggleGroup>
+            <ToggleGroup fx:id="Strategy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbShortestQueue" layoutX="231.0" layoutY="350.0" mnemonicParsing="false" text="Shortest Queue" toggleGroup="$Strategy" />
+   </children>
+</AnchorPane>
